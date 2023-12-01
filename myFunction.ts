@@ -12,6 +12,17 @@ let gethello=(s:string):string =>{
 }
 
 
+function consoleerror(errmsg:string):void{
+ console.log(errmsg)
+ 
+}
+
+
+function errorhandle(errmsg:string):never{
+   throw new Error(errmsg)
+}
+
+
 let coursename=["javascript","python","c#","java","machinelearning"];
 
  let findcourse=coursename.map((value):string=>{
@@ -20,7 +31,7 @@ let coursename=["javascript","python","c#","java","machinelearning"];
 
 })
 
-console.log(findcourse)
+console.log(findcourse) 
 
 
 
@@ -28,5 +39,7 @@ console.log(findcourse)
  console.log(myvalue)
 getuser("john","john34@gmail.com",3343443);
 gethello("hello india")
+consoleerror("some syntax error")
+errorhandle("not identify variable ")
 
 export{}
