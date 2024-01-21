@@ -19,8 +19,8 @@ interface Admin extends User {
 }
 
 
-let jon : admin = {
-    
+let jon : Admin = {
+    role: "admin",
    dbId: 1,
    githubToken: "123",
    name: "Jon",
@@ -29,10 +29,13 @@ let jon : admin = {
    setTrial: function() {
       return "Trial";
    },
-   getCoupen: (name= "some")=> {
+   getCoupen: (name= "some") : string => {
       return "Coupen";
    }
 }
+
+
+console.log(jon.getCoupen("sanjay")); 
 
 
 export{}
