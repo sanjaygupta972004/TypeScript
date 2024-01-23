@@ -89,3 +89,4 @@ let course1 = new sellCourse<Quiz>([
 ])   
 
 
+export{}
