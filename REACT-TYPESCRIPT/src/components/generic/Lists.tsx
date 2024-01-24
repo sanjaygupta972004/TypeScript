@@ -2,7 +2,6 @@
 type ListProps<T> = {
    items: T[];
    onClick: (value: T) => void;
-   
 }
 
 const Lists = <T extends {} >({items , onClick}: ListProps<T>) => {

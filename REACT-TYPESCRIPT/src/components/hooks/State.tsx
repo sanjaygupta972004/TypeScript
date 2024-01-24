@@ -10,6 +10,8 @@ import Profile from '../auth/Profile'
 
 import Lists from '../generic/Lists'
 
+import Input from '../html/Input'
+
 
 
 export const State = () => {
@@ -30,9 +32,12 @@ export const State = () => {
        onClick={(item) => console.log(item)}
        />
 
-       
+       <Input type="text" placeholder="Enter your name" /> 
 
       <Private isLoggedin={true} component={Profile} />
+      
+      
+
    </>
     
   )
